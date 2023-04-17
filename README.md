@@ -14,76 +14,69 @@ To write a program to predict the marks scored by a student using the simple lin
 4. 
 
 ## Program:
-```
 /*
 Program to implement the simple linear regression model for predicting the marks scored.
-Developed by: 
-RegisterNumber:  
+Developed by: 212222240045
+RegisterNumber: KARTHIKEYAN R
 */
-```
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.metrics import mean_absolute_error,mean_squared_error 
-df=pd.read_csv('/student_scores.csv')
+from sklearn.metrics import mean_absolute_error , mean_squared_error
+df=pd.read_csv('student_scores.csv')
 df.head()
 
-x = df.iloc[:,:-1].values
-x
-#segregating data to variables
+df.tail()
 
-y= df.iloc[:,1].values
+X = df.iloc[:,:-1].values
+X
+
+y = df.iloc[:,-1].values
 y
+
 from sklearn.model_selection import train_test_split
-x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=1/3,random_state=0)
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=1/3,random_state=0)
 
 from sklearn.linear_model import LinearRegression
-reg = LinearRegression()
-reg.fit(x_train,y_train)
-y_pred = reg.predict(x_test)
+regressor = LinearRegression()
+regressor.fit(X_train,y_train)
+y_pred=regressor.predict(X_test)
 
 y_pred
+
 y_test
 
-plt.scatter(x_train,y_train,color="green")
-plt.plot(x_train,reg.predict(x_train),color="brown")
-plt.title("Hours Vs Scores(Training set")
-plt.xlabel ("Hours")
-plt.ylabel ("Scores")
+plt.scatter(X_train,y_train,color="green")
+plt.plot(X_train,regressor.predict(X_train),color="blue")
+plt.title("Hours vs Scores (Training Set)")
+plt.xlabel("Hours")
+plt.ylabel("Scores")
 plt.show()
 
-plt.scatter(x_test,y_test,color="black")
-plt.plot(x_test,reg.predict(x_test),color="magenta")
-plt.title("Hours Vs Scores(Test set")
-plt.xlabel ("Hours")
-plt.ylabel ("Scores")
+plt.scatter(X_test,y_test,color="grey")
+plt.plot(X_test,regressor.predict(X_test),color="purple")
+plt.title("Hours vs Scores (Training Set)")
+plt.xlabel("Hours")
+plt.ylabel("Scores")
 plt.show()
+*/
+## OUTPUT
+![11](https://user-images.githubusercontent.com/119421232/232498547-60f23e51-aadd-41d4-b892-a7b3ace5a715.png)
 
-mse = mean_squared_error(y_test,y_pred)
-print("MSE = ",mse)
+![12](https://user-images.githubusercontent.com/119421232/232498639-eda73573-0162-444d-aa87-a00bb17c6f4f.png)
 
-mae = mean_absolute_error(y_test,y_pred)
-print("MAE = ",mae)
+![13](https://user-images.githubusercontent.com/119421232/232498716-7e5001bf-75e2-4b49-b129-b102d2859999.png)
 
-rmse = np.sqrt(mse)
-print("RMSE = ",rmse)
+![14](https://user-images.githubusercontent.com/119421232/232498785-8efc999d-cfd8-4331-bd4a-358a6426956c.png)
 
-## Output:
-![output](./img1.png)
+![15](https://user-images.githubusercontent.com/119421232/232498870-187521cf-1ede-43e1-b082-69e036937b0d.png)
 
-![output](./img%202.png)
+![16](https://user-images.githubusercontent.com/119421232/232498963-44ab65a5-7ce7-4580-9b8f-ef755247b278.png)
 
-![output](./img3.png)
+![17](https://user-images.githubusercontent.com/119421232/232500238-d1e1c28e-c34c-4023-8f65-fabf23892222.png)
 
-![output](./img%204.png)
+![18](https://user-images.githubusercontent.com/119421232/232500298-0d76ade9-105f-46bb-888e-0870f90fd9e9.png)
 
-![output](./img5.png)
-
-![output](./img6.png)
-
-![output](./img%207.png)
-
-![output](./img%208.png)
 
 ## Result:
 Thus the program to implement the simple linear regression model for predicting the marks scored is written and verified using python programming.
