@@ -8,15 +8,16 @@ To write a program to predict the marks scored by a student using the simple lin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Upload the file to your cell. 
-2. Type the required program
-3. Print the program.
-4. End the program.
+1. Import the required libraries and read the dataframe.
+2. Assign hours to X and scores to Y.
+3. Implement training set and test set of the dataframe
+4. Plot the required graph both for test data and training data.
 
-## Program:
+## program:
 ```
+
 Program to implement the simple linear regression model for predicting the marks scored.
-Developed by: KARTHIKEYA R
+Developed by: Karthikeyan R
 RegisterNumber:212222240045
 
 import pandas as pd
@@ -65,27 +66,30 @@ mae=mean_absolute_error(y_test,y_pred)
 print("MAE = ",mae)
 
 rmse=np.sqrt(mse)
-print("RMSE = ",rmse)
+print("RMSE = ",rmse) 
+
 ```
-## Output
-![mk1](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/c0da7c5f-a4f1-4030-918e-cfea6d313043)
 
-![mk2](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/5f098656-afd5-4887-abab-0861cc66e3cb)
+## output:
 
-![mk3](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/4db17357-70f5-4ee2-8970-2d4873cfb00c)
+![ml2](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/7051beec-6b00-4f5d-9db3-10efb82a347b)
 
-![mk4](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/50ba6d74-f516-43db-9a71-6e73c3deb589)
+![ml2 1](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/8e3e1c42-3652-4d9a-b68c-ffb328a4ab75)
 
-![mk5](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/89c415d0-3f05-4c8d-a49a-2a5f6645fd13)
+![ml2 2](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/c93068a9-8dab-4355-8823-8f5f7a5981fa)
 
-![mk6](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/7e6c250a-dd3f-4d28-8469-928deb97d2d3)
+![ml2 3](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/22c98f06-a6f4-4491-8fc7-1c5c11a1c96b)
+
+![ml2 4](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/81791894-e3e3-4905-a795-f1d2ec8c902c)
+
+![ml2 5](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/5338df86-f35f-4c13-8afd-e5bf56346ad9)
+
+![ml2 6](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/8b70213f-1969-47a8-8468-ff34dc295867)
+
+![ml2 7](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/2d774d80-4cf0-4b89-a80c-a9fa87c4cf32)
 
 
-![mk7](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/774e1a89-c3fe-4929-9051-f17bef89ae3f)
-
-![mk8](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/2dd26187-0581-4fcf-90f0-3c6b89db04ed)
-
-![mk9](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/28b20e5f-0137-47dc-99fd-f1a7f6f344d7)
+![ml2 8](https://github.com/karthikeyan-R16/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119421232/5e2e9960-2e1e-4a2e-984c-4764f447731b)
 
 
 
